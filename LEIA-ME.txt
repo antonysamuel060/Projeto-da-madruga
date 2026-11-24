@@ -1,0 +1,14 @@
+POKÉMON: LIGA ANALÍTICA — v2 (modular)
+EXECUTAR: hospede a pasta em HTTPS (GitHub Pages/Netlify) ou rode `python3 -m http.server` e abra no Chrome.
+INSTALAR NO ANDROID: Chrome > ⋮ > Instalar app. Funciona offline depois da 1ª abertura.
+TESTES: node test.js
+ADICIONAR CONTEÚDO (somente js/data.js):
+ - Questão: novo objeto em `questions` (reg, lvl, type mc|ce, q, opts, ans, formula, steps, 3 hints, src).
+ - Região: item em `regions`; sua ttela surge ao existir questão com o reg correspondente.
+ - Pokémon: item em `pokemon` (rarity, price, req opcional). Carta: item em `cards`.
+AVISO: questões são AUTORAIS (9 por enquanto). Nenhuma é oficial da UnB. Confira a matriz do PAS 3 em cespe.unb.br antes de ampliar.
+
+GERAR APK (no seu computador, com Node 18+ e Android Studio):
+ npm install && npm run prep && npx cap add android && npx cap sync && npx cap open android
+ No Android Studio: Build > Build APK(s). O arquivo fica em android/app/build/outputs/apk/debug/.
+SEM PC: hospede o site em HTTPS e gere o APK em pwabuilder.com (Package for stores > Android).

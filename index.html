@@ -1,0 +1,24 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#101b35"><link rel="manifest" href="manifest.json"><link rel="icon" href="icon.svg">
+<title>Pokémon: Liga Analítica</title>
+<style>
+:root{--bg:#0b1224;--p:#141f39;--p2:#1b2948;--t:#f4f6ff;--m:#aebbd8;--c:#72d7e8;--g:#ffd166;--ok:#70dfa4;--no:#ff8c9a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--t);font:16px system-ui,sans-serif}
+#app{max-width:640px;margin:auto;padding:14px 14px 92px}button{font:inherit;cursor:pointer;color:var(--t)}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.coin{background:#453b27;color:var(--g);padding:6px 12px;border-radius:99px;font-weight:800}
+.card{background:var(--p);border:1px solid #293957;border-radius:16px;padding:14px;margin:10px 0}.m{color:var(--m);font-size:13px}
+.row{display:flex;gap:12px;align-items:center;width:100%;text-align:left;background:var(--p);border:1px solid #293957;border-radius:16px;padding:13px;margin:8px 0}
+.row:disabled{opacity:.5}.big{font-size:30px}.btn{background:linear-gradient(100deg,#62cddd,#8c8df5);color:#10182c;border:0;border-radius:13px;padding:13px;font-weight:800;width:100%;margin-top:10px}
+.btn2{background:#253656;border:1px solid #3a5075;border-radius:12px;padding:10px;margin:4px 4px 0 0}.btn:disabled,.btn2:disabled{opacity:.45}
+.ch{display:block;width:100%;text-align:left;background:var(--p2);border:1px solid #35496d;border-radius:12px;padding:13px;margin:8px 0}
+.ch.ok{border-color:var(--ok);background:#173c38}.ch.no{border-color:var(--no);background:#442735}
+.fb{border-radius:14px;padding:13px;margin-top:12px;background:#1c2d49;line-height:1.5}.fb.ok{border:1px solid #347c61}.fb.no{border:1px solid #87485a}
+.bar{height:8px;background:#263451;border-radius:9px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--c),#9c8cff)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}nav{position:fixed;bottom:0;left:0;right:0;background:#0c1428f2;border-top:1px solid #293957;display:flex;justify-content:space-around;padding:8px 0 max(8px,env(safe-area-inset-bottom))}
+nav button{background:none;border:0;color:var(--m);font-size:11px}nav button.on{color:var(--c)}nav span{display:block;font-size:20px}
+.tag{font-size:11px;font-weight:800;color:var(--c)}.Lendário{color:var(--g)}.Épico{color:#c79bff}.Raro{color:var(--c)}
+</style></head><body><div id="app"></div>
+<nav id="nav"></nav>
+<script src="js/data.js"></script><script src="js/engine.js"></script><script src="js/ui.js"></script>
+</body></html>

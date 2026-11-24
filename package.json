@@ -1,0 +1,1 @@
+{"name":"liga-analitica","version":"2.0.0","scripts":{"prep":"rm -rf www && mkdir www && cp -r index.html sw.js manifest.json icon.svg js www","test":"node test.js"},"dependencies":{"@capacitor/android":"^6.0.0","@capacitor/cli":"^6.0.0","@capacitor/core":"^6.0.0"}}
